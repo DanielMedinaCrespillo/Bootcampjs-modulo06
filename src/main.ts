@@ -1,14 +1,11 @@
 import "./style.css";
-import { partida } from "./modelo";
 import {
   handleButtom,
   revisarPuntos,
   handleMostrarCarta,
   mostrarPuntuacion,
 } from "./ui";
-import { generarNumeroAleatorio, partidaNueva } from "./motor";
-
-partida.numeroAleatorio = generarNumeroAleatorio();
+import { partidaNueva } from "./motor";
 
 document.addEventListener("DOMContentLoaded", mostrarPuntuacion);
 

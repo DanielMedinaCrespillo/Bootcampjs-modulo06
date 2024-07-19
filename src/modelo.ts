@@ -1,9 +1,7 @@
 interface Partida {
-  numeroAleatorio: number;
   puntos: number;
 }
 
-export const partida: Partida = {
-  numeroAleatorio: 0,
+export let partida: Partida = {
   puntos: 0,
 };

@@ -74,8 +74,8 @@ const mensajePuntuacion = (frasePuntuacion: string) => {
 };
 
 export const handleButtom = () => {
-  partida.numeroAleatorio;
-  const numeroCarta = generarNumeroCarta(partida.numeroAleatorio);
+  const numeroAleatorio = generarNumeroAleatorio();
+  const numeroCarta = generarNumeroCarta(numeroAleatorio);
   const urlCarta = dameUrlCarta(numeroCarta);
   plasmarCarta(urlCarta);
   partida.puntos = sumaPuntuacion(partida.puntos, numeroCarta);
